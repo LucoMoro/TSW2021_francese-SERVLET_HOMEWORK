@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang= "it">
+<head>
+
+<title>CURRICULUM VITAE</title>
+</head>
+
+
+<body>
+<form action="Curriculum" method="post">
+<fieldset>INSERIMENTO DATI
+<p> nome </p> <input type="text" name="nome">
+<p> cognome </p><input type="text" name="cognome">
+<p> indirizzo </p><input type="text" name= "indirizzo">
+<p> attività lavorative </p><textArea name="attivitalav" row="100" col="100"></textArea>
+
+<p> competenze informatiche <br>
+<input type="checkbox" name="compinf"  value=" Java"> Java <br>
+<input type="checkbox" name="compinf"  value=" C++"> C++ <br>
+<input type="checkbox" name="compinf"  value=" C"> C </p>
+
+<p> altre competenze </p><textArea name="altrecomp" row="100" col="100"></textArea>
+
+<p> lingua conosciuta</p>
+<select name="lingcon">
+<option value="inglese " > inglese </option>
+<option value="russo" > russo </option>
+<option value ="francese" > francese </option>
+<option value= "tedesco" > tedesco </option>
+</select>
+
+<p> conoscenza della lingua <br>
+<input type="radio" name="conling" value="basso"> basso <br>
+<input type="radio" name="conling" value="medio"> medio <br>
+<input type="radio" name="conling" value="alto"> alto
+</p>
+</fieldset>
+<input type="submit" value="invia">
+<input type="reset" value="azzera">
+</form>
+</body>
+</html>
