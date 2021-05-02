@@ -1,22 +1,27 @@
-<!doctype html>
-
-<html lang="it">
+<!DOCTYPE html>
+<html>
 <head>
- 
- <title>CALCOLO L'AREA DEL RETTANGOLO</title>
+<meta charset="ISO-8859-1">
+<title>Cookie Test</title>
 </head>
-
 <body>
-<h4>PARAMETRI DA INSERIRE</h4>
-<form method="post" action="Rettangolo" name="area_rettangolo">
-  <input type="number" name="base"> <br>
-  
-  <input type="number" name="altezza">
-     
-  <br>   
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-</form>
+    <h4> Dimmi chi sei, così mi ricorderò di te!</h4>
+    <p> Riempi i campi del form, se ti riconoscerò allora ti saluterò a dovere! <p>
 
+    <form action="CookieServlet" method= "Post">
+        <p>
+        <fieldset>
+            Nome <input type = "text" name = "nome" placeholder = "Inserisci nome qui" required> <br>
+            Cognome <input type = "text" name = "cognome" placeholder = "Inserisci cognome qui" required> <br>
+            Ruolo <br>
+            <input type = "radio" name = "ruolo" value = "impiegato" required> Impiegato <br>
+            <input type = "radio" name = "ruolo" value = "manager" required> Manager <br>
+            <input type = "radio" name = "ruolo" value = "executive" required> Executive <br>
+
+            <input type = "submit" value = "conferma"> &nbsp;
+            <input type = "reset" value = "resetta">
+        </fieldset>
+        </p>
+    </form>
 </body>
 </html>
